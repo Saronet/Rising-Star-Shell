@@ -1,0 +1,886 @@
+/* CSS Document */
+
+@keyframes liveShow {
+    0% {
+        background-image: url(../images/header/live_0_kohav.png);
+    }
+
+    50% {
+        background-image: url(../images/header/live_1_kohav.png);
+    }
+
+    100% {
+        background-image: url(../images/header/live_0_kohav.png);
+    }
+}
+
+@-webkit-keyframes liveShow /* Safari and Chrome */ {
+
+    0% {
+        background-image: url(../images/header/live_0_kohav.png);
+    }
+
+    50% {
+        background-image: url(../images/header/live_1_kohav.png);
+    }
+
+    100% {
+        background-image: url(../images/header/live_0_kohav.png);
+    }
+}
+/*--------------------------------login -------------------------------*/
+.login-anim {
+    -webkit-animation: login-anim 1s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+    animation: login-anim 1s infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes login-anim {
+    from {
+        top: 0%;
+    }
+
+    to {
+        top: -100%;
+    }
+}
+
+@-webkit-keyframes login-anim /* Safari and Chrome */ {
+    from {
+        top: 0%;
+    }
+
+    to {
+        top: -100%;
+    }
+}
+/*--------------------------------register -------------------------------*/
+.register-slide-back {
+    -webkit-animation: register-slide-back 1.5s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+    animation: register-slide-back 1.5s /* infinite */;
+    animation-fill-mode: forwards;
+}
+
+@keyframes register-slide-back {
+    from {
+        left: 74%;
+    }
+
+    to {
+        left: 4px;
+    }
+}
+
+@-webkit-keyframes register-slide-back /* Safari and Chrome */ {
+    from {
+        left: 74%;
+    }
+
+    to {
+        left: 4px;
+    }
+}
+/*--------------------------------single good -------------------------------*/
+.rotupl {
+    -webkit-animation: rarrowUp 0.4s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+    animation: rarrowUp .4s;
+    animation-fill-mode: forwards;
+}
+
+.rotDown {
+    -webkit-animation: larrowDown 0.4s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+    animation: larrowDown .4s;
+    animation-fill-mode: forwards;
+}
+
+.badSong {
+    -webkit-animation: sinG 2s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+    /*-webkit-animation-delay: 2s;
+    animation-delay: 2s;*/
+    animation: sinG 2s;
+    animation-fill-mode: forwards;
+}
+
+.goodSong {
+    -webkit-animation: sinB 2s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+    /*-webkit-animation-delay: 2s;
+    animation-delay: 2s;*/
+    animation: sinB 2s;
+    animation-fill-mode: forwards;
+}
+
+.hideR {
+    -webkit-animation: hideR 0.5s; /* Safari and Chrome */
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation: hideR 0.5s infinite;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.hideL {
+    -webkit-animation: hideL 0.5s; /* Safari and Chrome */
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation: hideL 0.5s infinite;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.hateShow {
+    -webkit-animation: hateShow .5s; /* Safari and Chrome */
+    -webkit-animation-delay: 1.9s;
+    -webkit-animation-fill-mode: forwards;
+    /*-webkit-animation-timing-function: cubic-bezier(0.460, 0.025, 0.425, 1);
+	*/ animation: hateShow .5s;
+    animation-delay: 1.9s;
+    animation-fill-mode: forwards; /*animation-timing-function: cubic-bezier(0.460, 0.025, 0.425, 1);*/
+}
+
+.likeShow {
+    -webkit-animation: likeShow .5s; /* Safari and Chrome */
+    -webkit-animation-delay: 1.9s;
+    -webkit-animation-fill-mode: forwards;
+    /*-webkit-animation-timing-function: cubic-bezier(0.460, 0.025, 0.425, 1);
+	*/ animation: likeShow .5s;
+    animation-delay: 1.9s;
+    animation-fill-mode: forwards; /*animation-timing-function: cubic-bezier(0.460, 0.025, 0.425, 1);*/
+}
+
+/*.nextPage {
+    background-color: #fff;
+}*/
+/*@-webkit-keyframes rarrowUp { /*rotate right arrow up- vote single- chrome*/
+    /*0% {
+        left: -25%;
+        top: 25%;
+        -webkit-transform: rotateZ(-90deg);
+    }
+
+    100% {
+        left: -30%;
+        top: 25%;
+        -webkit-transform: rotateZ(0deg);
+    }
+}
+
+@keyframes rarrowUp {*/ /*rotate right arrow up- vote single*/
+    /*0% {
+        left: -25%;
+        top: 25%;
+        transform: rotateZ(-90deg);
+    }
+
+    100% {
+        left: -30%;
+        top: 25%;
+        transform: rotateZ(0deg);
+    }
+}*/
+
+@-webkit-keyframes larrowDown { /*turn arrow DOWN -chrome*/
+    0% {
+        /*left: -10%;*/
+        top: 15%;
+        -webkit-transform: rotateZ(90deg);
+    }
+
+    100% {
+        /*left: -5%;*/
+        top: 15%;
+        -webkit-transform: rotateZ(180deg);
+    }
+}
+
+@keyframes larrowDown { /*turn arrow DOWN*/
+    0% {
+        /*left: -10%;*/
+        top: 15%;
+        transform: rotateZ(90deg);
+    }
+
+    100% {
+        /*left: -5%;*/
+        top: 15%;
+        transform: rotateZ(180deg);
+    }
+}
+
+@-webkit-keyframes sinG {
+    0% {
+        left: 50%;
+        background-image: url(../images/votes/slide_pick_left.png);
+        background-position: 0px;
+    }
+
+    74% {
+        left: 50%;
+        background-image: url(../images/votes/slide_pick_left.png);
+        background-position: 0px;
+    }
+
+    80% {
+        left: 20%;
+        background-image: url(../images/votes/slide_pick_left.png);
+        background-position: 0px;
+    }
+
+    90% {
+        left: 20%;
+        background-image: none;
+        background-position: -3000px;
+    }
+
+    100% {
+        left: 20%;
+        background-image: none;
+        background-position: -3000px;
+    }
+}
+
+
+
+@keyframes sinG {
+    0% {
+        left: 50%;
+        background-image: url(../images/votes/slide_pick_left.png);
+        background-position: 0px;
+    }
+
+    74% {
+        left: 50%;
+        background-image: url(../images/votes/slide_pick_left.png);
+        background-position: 0px;
+    }
+
+    80% {
+        left: 20%;
+        background-image: url(../images/votes/slide_pick_left.png);
+        background-position: 0px;
+    }
+
+    90% {
+        left: 20%;
+        background-image: none;
+        background-position: -3000px;
+    }
+
+    100% {
+        left: 20%;
+        background-image: none;
+        background-position: -3000px;
+    }
+}
+
+@-webkit-keyframes sinB {
+    0% {
+        left: 0%;
+        background-image: url(../images/votes/slide_pick_right.png);
+        background-position: 0px;
+        
+    }
+
+    74% {
+        left: 0%;
+        background-image: url(../images/votes/slide_pick_right.png);
+        background-position: 0px;
+    }
+
+    80% {
+        left: 30%;
+        background-image: url(../images/votes/slide_pick_right.png);
+        background-position: 0px;
+    }
+
+    90% {
+        left: 30%;
+        background-image: none;
+        background-position: 3870px;
+    }
+
+    100% {
+        left: 30%;
+        background-image: none;
+        background-position: 3870px;
+    }
+}
+
+
+@keyframes sinB {
+    0% {
+        left: 0%;
+        background-image: url(../images/votes/slide_pick_right.png);
+        background-position: 0px;
+    }
+
+    74% {
+        left: 0%;
+        background-image: url(../images/votes/slide_pick_right.png);
+        background-position: 0px;
+    }
+
+    80% {
+        left: 30%;
+        background-image: url(../images/votes/slide_pick_right.png);
+        background-position: 0px;
+    }
+
+    90% {
+        left: 30%;
+        background-image: none;
+        background-position: 3870px;
+    }
+
+    100% {
+        left: 30%;
+        background-image: none;
+        background-position: 3870px;
+    }
+}
+
+
+@-webkit-keyframes hideR {
+    0% {
+        /*right: 0%;*/
+        left: 30%;
+    }
+
+    100% {
+        /*right: -50%;*/
+        left: 100%;
+    }
+}
+
+@keyframes hideR {
+    0% {
+        /*right: 0%;*/
+        left: 30%;
+    }
+
+    100% {
+        /*right: -50%;*/
+        left: 100%;
+    }
+}
+
+@-webkit-keyframes hideL {
+    0% {
+        left: 20%;
+    }
+
+    100% {
+        left: -50%;
+    }
+}
+
+@keyframes hideL {
+    0% {
+        left: 20%;
+    }
+
+    100% {
+        left: -50%;
+    }
+}
+
+@-webkit-keyframes hateShow {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+        left: 75%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 75%;
+    }
+}
+
+@keyframes hateShow {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+        left: 75%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 75%;
+    }
+}
+
+@-webkit-keyframes likeShow {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+        left: -45%;
+    }
+
+    100% {
+        opacity: 1;
+        left: -45%;
+    }
+}
+
+@keyframes likeShow {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+        left: -45%;
+    }
+
+    100% {
+        opacity: 1;
+        left: -45%;
+    }
+}
+/*--------------------------------battle side r -------------------------------*/
+.rotdwnrcon1 {
+    -webkit-animation: rarrowDwncon1 0.4s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+    animation: rarrowDwncon1 .4s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rarrowDwncon1 {
+    0% {
+        left: 0;
+        top: -5%;
+        -webkit-transform: rotateZ(270deg);
+    }
+
+    100% {
+        left: 0%;
+        top: -10%;
+        -webkit-transform: rotateZ(180deg);
+    }
+}
+
+@keyframes rarrowDwncon1 {
+    0% {
+        left: 0;
+        top: -10%;
+        transform: rotateZ(270deg);
+    }
+
+    100% {
+        left: 0%;
+        top: 0%;
+        transform: rotateZ(180deg);
+    }
+}
+
+.rotuprcon1 {
+    -webkit-animation: rarrowUpcon1 0.4s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+    animation: rarrowUpcon1 .4s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rarrowUpcon1 {
+    0% {
+        /*left: 0;*/
+        top: -5%;
+        -webkit-transform: rotateZ(270deg);
+    }
+
+    100% {
+        /*left: 0%;*/
+        top: 0%;
+        -webkit-transform: rotateZ(360deg);
+    }
+}
+
+@keyframes rarrowUpcon1 {
+    0% {
+        /*left: 0;*/
+        top: -5%;
+        transform: rotateZ(270deg);
+    }
+
+    100% {
+        /*left: 0%;*/
+        top: 0%;
+        transform: rotateZ(360deg);
+    }
+}
+
+.rotdwnlcon2 {
+    -webkit-animation: rarrowDwncon2 0.4s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+    animation: rarrowDwncon2 .4s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rarrowDwncon2 {
+    0% {
+        right: 2%;
+        top: -5%;
+        -webkit-transform: rotateZ(90deg);
+    }
+
+    100% {
+        right: 2%;
+        top: -10%;
+        -webkit-transform: rotateZ(180deg);
+    }
+}
+
+@keyframes rarrowDwncon2 {
+    0% {
+        right: 1%;
+        top: -5%;
+        transform: rotateZ(90deg);
+    }
+
+    100% {
+        right: 0%;
+        top: 0%;
+        transform: rotateZ(180deg);
+    }
+}
+
+.rotuplcon2 {
+    -webkit-animation: rarrowUpcon2 0.4s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+    animation: rarrowUpcon2 .4s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rarrowUpcon2 {
+    0% {
+        right: 1%;
+        top: -5%;
+        -webkit-transform: rotateZ(90deg);
+    }
+
+    100% {
+        right: 0%;
+        top: 0%;
+        -webkit-transform: rotateZ(0deg);
+    }
+}
+
+@keyframes rarrowUpcon2 {
+    0% {
+        right: 1%;
+        top: -5%;
+        transform: rotateZ(90deg);
+    }
+
+    100% {
+        right: 0%;
+        top: 0%;
+        transform: rotateZ(0deg);
+    }
+}
+
+.battel1vot {
+    -webkit-animation: battel1vot 2s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+    animation: battel1vot 2s;
+    animation-fill-mode: forwards;
+}
+
+.hideLcon {
+    -webkit-animation: hideLcon 0.5s; /* Safari and Chrome */
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation: hideLcon 0.5s infinite;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.hideRcon {
+    -webkit-animation: hideRcon 0.5s; /* Safari and Chrome */
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation: hideRcon 0.5s infinite;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.showIconCon1 {
+    -webkit-animation: showIconCon1 .5s; /* Safari and Chrome */
+    -webkit-animation-delay: 1.8s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.460, 0.025, 0.425, 1);
+    animation: showIconCon1 .5s;
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.460, 0.025, 0.425, 1);
+}
+
+@-webkit-keyframes battel1vot {
+    0% {
+        left: 0%;
+        background-image: url(../images/votes/slide_pick_right.png);
+        background-position: 0px;
+    }
+
+    75% {
+        left: 0%;
+        background-image: url(../images/votes/slide_pick_right.png);
+        background-position: 0px;
+    }
+
+    80% {
+        left: 30%;
+        background-image: url(../images/votes/slide_pick_right.png);
+        background-position: 0px;
+        /*background-image: url(../images/votes/slide_pick_right.png);*/
+    }
+
+    90% {
+        left: 30%;
+        background-image: none;
+        background-position: 3000px;
+    }
+
+    100% {
+        left: 30%;
+        background-image: none;
+        background-position: 3000px;
+    }
+}
+
+@keyframes battel1vot {
+    0% {
+        left: 50%;
+        background-image: url(../images/votes/slide_pick_right.png);
+        background-position: 0px;
+    }
+
+    75% {
+        left: 50%;
+        background-image: url(../images/votes/slide_pick_right.png);
+        background-position: 0px;
+    }
+
+    80% {
+        left: 20%;
+        background-image: url(../images/votes/slide_pick_right.png);
+        background-position: 0px;
+    }
+
+    90% {
+        left: 20%;
+        background-image: none;
+        background-position: 3000px;
+    }
+
+    100% {
+        left: 20%;
+        background-image: none;
+        background-position: 3000px;
+    }
+}
+
+
+@-webkit-keyframes showIconCon1 {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+        left: 2%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 2%;
+    }
+}
+
+@keyframes showIconCon1 {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+        left: 2%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 2%;
+    }
+}
+/*--------------------------------battel side left -------------------------------*/
+.battel2vot {
+    -webkit-animation: battel2vot 2s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+    /*-webkit-animation-delay: 0s;
+    animation-delay: .6s;*/
+    animation: battel2vot 2s;
+    animation-fill-mode: forwards;
+}
+
+.showIconCon2 {
+    -webkit-animation: showIconCon2 0.5s; /* Safari and Chrome */
+    -webkit-animation-delay: 1.8s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.460, 0.025, 0.425, 1);
+    animation: showIconCon2 0.5s;
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.460, 0.025, 0.425, 1);
+}
+
+@-webkit-keyframes battel2vot {
+    0% {
+        left: 50%;
+        background-image: url(../images/votes/slide_pick_left.png);
+        background-position: 0px;
+    }
+
+    75% {
+        left: 50%;
+        background-image: url(../images/votes/slide_pick_left.png);
+        background-position: 0px;
+    }
+
+    80% {
+        left: 20%;
+        background-image: url(../images/votes/slide_pick_left.png);
+        background-position: 0px;
+    }
+
+    90% {
+        left: 20%;
+        background-image: none;
+        background-position: -3000px;
+    }
+
+    100% {
+        left: 20%;
+        background-image: none;
+        background-position: -3000px;
+    }
+}
+
+@keyframes battel2vot {
+    0% {
+        left: 50%;
+        background-image: url(../images/votes/slide_pick_left.png);
+        background-position: 0px;
+    }
+
+    75% {
+        left: 50%;
+        background-image: url(../images/votes/slide_pick_left.png);
+        background-position: 0px;
+    }
+
+    80% {
+        left: 20%;
+        background-image: url(../images/votes/slide_pick_left.png);
+        background-position: 0px;
+    }
+
+    90% {
+        left: 20%;
+        background-image: none;
+        background-position: -3000px;
+    }
+
+    100% {
+        left: 20%;
+        background-image: none;
+        background-position: -3000px;
+    }
+}
+
+@-webkit-keyframes hideRcon {
+    0% {
+        left: 30%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes hideRcon {
+    0% {
+        left: 30%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@-webkit-keyframes hideLcon {
+    0% {
+        left: 20%;
+    }
+
+    100% {
+        left: -50%;
+    }
+}
+
+@keyframes hideLcon {
+    0% {
+        left: 20%;
+    }
+
+    100% {
+        left: -50%;
+    }
+}
+
+@-webkit-keyframes showIconCon2 {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+        left: 50%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 75%;
+    }
+}
+
+@keyframes showIconCon2 {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+        left: 75%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 75%;
+    }
+}
+
+/*-------------------------------------result-------------------------------------------*/

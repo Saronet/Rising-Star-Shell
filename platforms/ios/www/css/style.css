@@ -1,0 +1,1092 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url("animation.css");
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+/* unvisited link */
+a:visited {
+    text-decoration: none;
+}
+/* visited link */
+a:hover {
+    text-decoration: none;
+}
+/* mouse over link */
+a:active {
+    text-decoration: none;
+}
+
+.checkboxArea a {
+    text-decoration: underline;
+}
+
+/*-------------------cf-----------------------------*/
+.cf:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.cf {
+    /*	display: inline-block;
+*/
+}
+
+html[xmlns] .cf {
+    display: block;
+}
+
+* html .cf {
+    height: 1%;
+}
+/*=====================================================generel==============================================*/
+html, body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    /* Opera */
+    /*background-image: -o-linear-gradient(bottom, #007DBE 0%, #000000 61%);*/
+    /* Webkit (Safari/Chrome 10) */
+    /*background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #007DBE), color-stop(1, #000000));*/
+    /* Webkit (Chrome 11+) */
+    /*background-image: -webkit-linear-gradient(bottom, #007DBE 0%, #000000 61%);*/
+    /*background-image: linear-gradient(bottom, #007DBE 0%, #000000 61%);*/
+    background-image: url(../images/general-background.jpg);
+    font-family: Arial, Verdana, sans-serif;
+    direction: rtl;
+    color: #fff;
+    font-size: 16px;
+    /*background-size: 100% 100%;*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section {
+    height: 345px;
+    width: 100%;
+    position: absolute;
+    top: 86px;
+}
+
+#login {
+    display: block;
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#banner {
+    position: absolute;
+    /*top: 90%;*/
+    bottom: 0;
+    height: 10.5%;
+    width: 100%;
+    display: block;
+    /*border-top: solid 1px #00486d;*/
+    z-index: 10;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+}
+
+#banner iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.centerMe {
+    /* Internet Explorer 10 */
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /* Safari, Chrome, and Opera */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    /* W3C */
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    /*text-overflow: ellipsis;*/
+}
+
+h2 {
+    font-size: 2em;
+    overflow: hidden;
+    white-space: nowrap;
+    /*text-overflow: ellipsis;*/
+}
+
+/*===========================================pc-screen=================================*/
+#pc-screen {
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/pc-screen.jpg);
+    background-size: 100% 100%;
+    z-index: 10000;
+    font-size: 3.5em;
+    text-align: center;
+    vertical-align: central;   
+}
+
+#pc-screen div{
+    margin: auto;  
+    margin-top: 25%;
+}
+
+/*===========================================horizonal-screen=================================*/
+#horizonal-screen {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/horizonal-background.jpg);
+    background-size: 100% 100%;
+    z-index: 1000;
+}
+
+/*#horizonal-screen{
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}*/
+
+#flip-me {
+    display: none;
+    height: 20%;
+    width: 20%;
+    background-image: url(../images/flip.png);
+    background-size: 100% 100%;
+    margin: auto;
+}
+ /*================================================LOADER=====================================*/
+#loader{
+    display: block;
+position: absolute;
+top: 0;
+height: 100%;
+width: 100%;
+background-color: #000000;
+z-index: 1000;
+opacity: 0.8;
+color: #ffffff;
+font-size: 3em;
+text-align: center;
+}
+#loader span{
+ position: absolute;
+top: 50%;
+left: 44%;
+}
+
+/*================================================LOADER=====================================*/
+#loader{
+    display: block;
+position: absolute;
+top: 0;
+height: 100%;
+width: 100%;
+background-color: #000000;
+z-index: 1000;
+opacity: 0.8;
+color: #ffffff;
+font-size: 1.5em;
+}
+#loader span{
+ position: absolute;
+top: 50%;
+left: 44%;
+}
+
+
+/*================================================HEADER=====================================*/
+header {
+    position: relative;
+    width: 100%;
+    height: 84px;
+    border-bottom: solid 1px #006599;
+}
+
+.header.logo {
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    background-image: url(../images/header/kohav_main_header_small.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.live {
+   /*  background-image: url(../images/header/live_0_kohav.png); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 7%;
+    height: 28%;
+    position: absolute;
+    left: 2.5%;
+    top: 65%;
+    -webkit-animation: liveShow 2s infinite; /* Safari and Chrome */
+    animation: liveShow 2s infinite;
+}
+/*================================================LOG IN SECTION=====================================*/
+
+
+/*===============================================AGREEMENT SECTION==============================================*/
+
+#agreement{
+    display: none;
+    height: 78%;
+    top: 12%;
+    
+}
+
+/*#result-gallery {
+    height: 33.9%;
+    /* direction: rtl;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 1%;
+}
+
+#result-gallery > * {
+    -webkit-transform: translate3d(0,0,0);
+}
+
+#result-gallery ul {
+    height: 100%;
+    /* width: 1081px;
+     width: 500px;
+    padding-right: 4px;
+    direction: rtl;
+    overflow-y: hidden;
+}*/
+
+
+#scroller-container-agreement{
+    width: 90%;
+    height: 98%;
+    margin-right: 5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#scroller {
+    /*width: 90%;
+    height: 98%;
+    margin-right: 5%;
+    overflow: scroll;*/
+    overflow: hidden;
+}
+
+#scroller li{
+    width: 100%;
+    height: 95%;
+}
+
+#close-agreement {
+    /*display: none;*/
+    height: 8%;
+    width: 8%;
+    color: black;
+    background-color: #a9a9a9;
+    /*float: right;*/
+    text-align: center;
+    line-height: 115%;
+    position: absolute;
+    top: -5%;
+    left: 2%;
+    border: solid 1px black;
+    font-size: 3em;
+    border-radius: 20%;
+}
+/*===============================================MASSEGE SECTION==============================================*/
+.messageImage, .messageNoImage { /*whit image or not */
+    width: 100%;
+    height: 100%;
+}
+
+.team {
+   /* background-image: url(../images/masseg/iphone_message_image_right_size.jpg);*/
+    /* background-image: url(../images/masseg/team.jpg); */
+    background-repeat: no-repeat,no-repeat;
+    background-size: 100% 100%;
+    background-position: right top, center -150%;
+    display: block;
+    width: 89%;
+    height: 45%;
+    margin: auto;
+    margin-top: 2%;
+    /*z-index: 1;*/
+}
+
+.message {
+    background: -moz-linear-gradient(top, rgba(0,34,51,1) 0%, rgba(0,9,15,0.1) 32%, rgba(0,9,12,0.1) 62%, rgba(0,22,36,0.1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,34,51,1)), color-stop(32%,rgba(0,9,15,0.1)), color-stop(62%,rgba(0,9,12,0.1)), color-stop(100%,rgba(0,22,36,0.1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,34,51,1) 0%,rgba(0,9,15,0.1) 32%,rgba(0,9,12,0.1) 62%,rgba(0,22,36,0.1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,34,51,1) 0%,rgba(0,9,15,0.1) 32%,rgba(0,9,12,0.1) 62%,rgba(0,22,36,0.1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,34,51,1) 0%,rgba(0,9,15,0.1) 32%,rgba(0,9,12,0.1) 62%,rgba(0,22,36,0.1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,34,51,1) 0%,rgba(0,9,15,0.1) 32%,rgba(0,9,12,0.1) 62%,rgba(0,22,36,0.1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002233', endColorstr='#e6001624',GradientType=0 ); /* IE6-9 */
+}
+
+.message {
+    border-top: 2px solid #005d8d;
+    height: 84px;
+    width: 285px;
+    border-bottom: solid 2px #183344;
+    margin: auto;
+    position: relative;
+    background-color: rgba(0,0,0,0.29);
+}
+
+#message-no-img-text {
+    /* font-size: 1.9em; */
+    /* letter-spacing: 0.13em; */
+    margin-top: 5%;
+}
+
+.speker {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    height: 32%;
+    position: absolute;
+    top: -15%;
+    right: 0;
+    left: 0;
+}
+
+.speker img {
+    height: 88%;
+    width: 15%;
+}
+
+#message-no-img-text .detail {
+    font-size: 1.8em;
+    height: 66%;
+    margin-top: 6%;
+    margin: auto;
+    top: 15%;
+}
+
+.detail {
+    font-size: 1.8em;
+    width: 95%;
+    height: 66%;
+    display: block;
+    margin-top: 6%;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 15%;
+}
+
+.continue {
+    width: 84%;
+    
+    height: 24px;
+    width: 269px;
+    
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.continue h2 {
+    margin-left: 1%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+#message .continue h2 {
+    /* margin-top: 3%; */
+    font-size: 1.6em;
+}
+
+.continue {
+    /*bottom: 3%;*/
+    height: 10%;
+}
+
+.contIcons {
+    background-image: url(../images/masseg/dots_gif.png);
+    /* background-position-x: -364px; */
+    /* background-size:767%; */
+    /* width: 10%; */
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    background-position-x: -285.25px;
+	margin-top:1%;
+    /* top: 72%; */
+}
+
+.musix {
+    background-image: url(../images/musix.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 16%;
+    position: absolute;
+    bottom: 2.7%;
+    margin: 0 27.5%;
+}
+
+.messageNoImage .message {
+    margin-top: 10%;
+    height: 51.3%;
+}
+
+.messageNoImage .speker {
+    height: 23%;
+    top: -10%;
+}
+
+.messageNoImage .continue {
+    right: 13%;
+}
+/*=============================================REGISTER SECTION===========================================*/
+.topMenu {
+    width: 100%;
+    height: 6%;
+    background-color: rgba(0,32,50,0.8);
+    /*background-image: url(../images/register/koteret_bgpixel_kohav_full.png);*/
+    padding: 0 0 0 0;
+    line-height: 3em;
+    background-size: auto 100%;
+    border-bottom: 1px solid #005078;
+    position: absolute;
+    top: 17.6%;
+    z-index: 1;
+    display: none;
+}
+
+.topMenu h1 {
+    text-align: center;
+    font-size: 100%;
+}
+
+#vote-dic-single, #vote-dic-battle, #register-dic, #results-dic, #end-show-dic {
+    height: 80%;
+    padding-top: 1%;
+    font-size: 1.5em;
+	direction:rtl;
+}
+
+.contestant {
+/*     background-image: url(../images/register/kohav2.jpg); */
+background-repeat: no-repeat;
+height: 100%;
+background-size: auto 100%;
+position: relative;
+background-position: center;
+
+}
+
+#registerBattle, #registerSingle {
+    height: 100%;
+}
+
+.deny-register {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+
+#result .contestant {
+    margin-top: 8.1%;
+}
+
+
+.slidein {
+    background-image: url(../images/register/signin_slider_base.png);
+	background-repeat: no-repeat;
+	height: 68px;
+	width: 59%;
+	 padding-right: 4%; 
+	/* padding-left: 4%; */
+	background-size: auto 100%;
+	position: absolute;
+	left: 20%;
+	background-position: -6px -8px;
+	overflow: hidden;
+}
+
+/*#registerSingle {
+    display: none;
+}*/
+
+#registerSingle .slidein {
+    top: 62%;
+}
+
+/*#registerBattle {
+    display: none;
+}*/
+
+#registerBattle .slidein {
+    top: 62%;
+}
+
+/*.slidein .register-red-flash {
+    background-image: url(../images/register/signin_slider_base_red.png);
+    top: 6%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    position: absolute;
+    -webkit-animation: mymove 1s infinite;
+}*/
+
+.slidein .register-red-flash {
+    background-image: url(../images/register/signin_slider_base_red.png);
+top: 3%;
+background-repeat: no-repeat;
+background-size: auto 86%;
+position: absolute;
+-webkit-animation: mymove 1s infinite;
+display: block;
+background-position: -3px -6px;
+height: 68px;
+width: 100%;
+left: 3%;
+}
+
+#test-reut{
+    top: 17%;
+height: 67%;
+width: 89%;
+background-size: 100%;
+position: absolute;
+left: 5%;
+/*border: 1px solid red;*/
+border-radius: 72px;
+z-index: 1;
+overflow: hidden;
+/*border: 1px solid red;*/
+}
+
+#test-reut-stars{
+    display: none;
+width: 100%;
+height: 100%;
+background-image: url(../images/register/kohav_bg_slider_iphone.png);
+background-repeat: no-repeat;
+background-size: 100%;
+position: absolute;
+left: 0%;
+/*border: 1px solid white;*/
+}
+#test-reut-outer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: -77%;
+    /*border: 1px solid yellow;*/
+}
+@-webkit-keyframes mymove {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.slidein.grey .slider-text + p{
+	padding-right:9px;
+	
+}
+
+
+.slidein .register-stars {
+    top: 20px;
+    background-repeat: no-repeat;
+    height: 85%;
+    width: 90%;
+    position: absolute;
+    left: 19px;
+}
+
+.slidein.grey {
+    background-image: url(../images/register/signin_slider_grey.png);
+    margin: auto;
+    /*
+    height: 20%;
+    
+    width: 58%;
+    left: 21%;
+    top: 62%;*/
+}
+
+.slidein .grey .slider-text {
+    font-size: 1em;
+    width: 58%;
+    text-align: center;
+	vertical-align:middle;  
+	margin:auto;
+	padding-top:0px;
+	top:11%;
+}
+.slidein .slider-text span{
+   
+   transition : color 0.3s ease-out; 
+  -webkit-transition : color 0.3s ease-out; 
+}
+.slidein .slider-text span.wish{
+    color: white;
+ 
+}
+
+#notRegister .slider-text {
+    font-size: 1em;
+}
+
+.slidein .grey .btn {
+    display: none;
+}
+
+.slide {
+    background-image: url(../images/register/signin_slider_button.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: absolute;
+    width: 26%;
+height: 72%;
+background-size: auto 100%;
+top: 2px;
+left: 2px;
+}
+
+/*.slide:hover {
+    background-image: url(../images/register/signin_slider_button_prs.png);
+    background-size: 100% 104%;
+}*/
+/*.slide.animateLeft {
+    transition: left 1.6s ease-out;
+    -webkit-transition: left 1.6s ease-out;
+}*/
+
+.slider-text {
+    font-size: 1.2em;
+    position: absolute;
+    top: 23%;
+    right: 13%;
+     color: gray;
+    
+}
+
+.reMesseg {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0,0,0,.65);
+    min-height: 13%;
+    border-top: solid 1px rgba(117,117,117,1);
+}
+
+#registerBattle .reMesseg {
+    width: 100%;
+}
+
+
+.single {
+    display: none;
+}
+
+#results .single .reMesseg.results.cf {
+    /*bottom: 7%;*/
+    height: 15%;
+}
+
+.reMesseg .continue {
+    position: absolute;
+    width: 100%;
+    border-top: solid 1px rgba(117,117,117,.5);
+    float: left;
+    bottom: 101%;
+    background-color: rgba(0,0,0,.65);
+    height: 49%;
+    z-index: 5;
+	direction:rtl;
+}
+
+#register .reMesseg .continue {
+    height: 53%;
+}
+
+
+.reMesseg .continue h2 {
+    /*    line-height: 151%;*/
+}
+
+.songName {
+    text-align: center;
+    height: 57%;
+    width: 100%;
+}
+
+
+#registerBattle .songName {
+    position: relative;
+}
+
+.songName, .songName1, .songName2 {
+    font-size: 1.5em;
+}
+
+.registerBattle {
+}
+
+.songName h1, .songName h2 {
+    /*width: 80%;*/
+    margin: 0 auto;
+	line-height:130%;
+}
+
+.songName h1 {
+    margin-top: 2%;
+}
+
+
+
+/*================================================VOTE SECTION=====================================*/
+
+
+/*================================================VOTE BATTLE SECTION=====================================*/
+
+/*=============================================RESULTS SECTION======================================================*/
+
+
+/*=======================================================RESULT BATTLE=========================================*/
+
+/*================================================GALLERY SECTION================================================*/
+
+/*-------------------------------------SHELL PAGE----------------------------------------------------*/
+
+#slideSingleRight {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+}
+
+#slideSingleLeft {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -50%;
+}
+
+#rslidecon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: -50%;
+}
+
+#lslidecon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -50%;
+}
+
+.bgLeft {
+    position: absolute;
+}
+
+.reset-localstorge {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(196, 0, 204,.35);
+    top: 47px;
+    left: 1px;
+    z-index: 500;
+}
+
+video{
+width:100%;
+height:100%;
+}
+#noInternet .team{
+background-image:none;
+}
+
+
+/***********Shell Page***********/
+
+html, body {
+font-size: 15px;
+}
+.blur{
+    -webkit-filter: blur(2px);
+}
+.not-blur{
+    -webkit-filter: blur(0px);
+}
+#container {
+width: 100%;
+height: 100%;
+background-image: url(../images/general-background.jpg);
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+/*header*/
+
+header {
+    position: relative;
+    width: 100%;
+    height: 84px;
+    border-bottom: solid 1px #006599;
+}
+
+.header.logo {
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    background-image: url(../images/header/kohav_main_header_small.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/*message*/
+.swiper-container {
+    direction: ltr;
+}
+.messageImage .message{
+    direction: rtl;
+}
+
+.message {
+    border-top: 2px solid #005d8d;
+    height: 84px;
+    width: 285px;
+    border-bottom: solid 2px #183344;
+    margin: auto;
+    position: relative;
+    background-color: rgba(0,0,0,0.29);
+}
+
+.detail {
+font-size: 13px;
+top: 0;
+width: 255px;
+padding: 20px 14px 10px 14px;
+height: 53px;
+position: relative;
+display: block;
+text-align: center;
+}
+
+/*slidin*/
+
+section#message .slidein, section#message .slidein.grey {
+background-image: url(../images/register/signin_slider_base.png);
+background-repeat: no-repeat;
+height: 68px;
+width: 200px;
+background-size: auto 100%;
+position: absolute;
+left: 0;
+right: 0;
+margin: auto;
+top: 270px;
+overflow: hidden;
+padding-right: 0;
+background-position: -6px -8px;
+}
+
+section#message .slide {
+background-image: url(../images/register/signin_slider_button.png);
+background-repeat: no-repeat;
+background-position: left center;
+position: absolute;
+width: 53px;
+height: 49px;
+background-size: auto 100%;
+top: 2px;
+left: 4px;
+}
+
+section#message .slidein.grey {
+    background-image: url(../images/register/signin_slider_grey.png);
+}
+
+section#message .slider-text {
+width: 115px;
+text-align: center;
+height: 53px;
+right: 25px;
+top: 0;
+}
+section#message .slider-text .online {
+    font-size: 22px;
+    line-height: 53px;
+    color: #fff;
+    width: 100%;
+    vertical-align: middle;
+}
+section#message .slider-text .offline {
+    font-size: 15px;
+    line-height: 19px;
+    color: grey;
+    width: 100%;
+    height: 37px;
+    vertical-align: middle;
+    margin-top: 9px;
+}
+.offline , .online {
+display: none;
+}
+
+/*notifications*/
+#gear-setting{
+    display: none;
+    position: absolute;
+bottom: 10px;
+right: 10px;
+background-image: url(../images/masseg/gear.png);
+background-size: 100%;
+background-repeat: no-repeat;
+height: 25px;
+width: 25px;
+cursor: pointer;
+}
+.settings-popup{
+    display: none;
+    height: 100px;
+    width: 100px;
+    top: 105px;
+    position: absolute;
+    background-color: #fff;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.settings-popup .close {
+
+}
+.settings-popup .logo {
+width: 100%;
+height: 30px;
+}
+.settings-popup .notification{
+    
+}
+
+
+/***********End of Shell Page***********/

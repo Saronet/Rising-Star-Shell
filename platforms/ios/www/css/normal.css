@@ -1,0 +1,79 @@
+
+
+html, body {
+    /* background-image: url(../images/general-background.jpg); */
+    font-size: 15px;
+    background-repeat: repeat;
+    overflow: scroll;
+    
+}
+header {
+    height: 114px;
+}
+.header.logo {
+background-image: url(../images/normal/header/kohav_main_header_normal.png);
+height: 114px;
+background-size: 100% 119%;
+}
+section {
+    height: 760px;
+    top: 0;
+    position: relative;
+}
+.messageImage .message {
+height: 160px;
+width: 608px;
+padding-top: 10px;
+}
+.detail {
+line-height: 26px;
+font-size: 23px;
+width: 580px;
+padding: 26px 14px 15px 14px;
+height: 120px;
+}
+.pagination {
+top: 343px;
+}
+section#message .slidein, section#message .slidein.grey{
+	height: 130px;
+    background-position: -9px -9px;
+    width: 380px;
+    top: 585px;
+}
+section#message .slide {
+width: 93px;
+height: 93px;
+background-size: auto 100%;
+top: 10px;
+left: 10px;
+}
+section#message .slider-text {
+width: 317px;
+text-align: center;
+height: 110px;
+right: 0;
+top: 0;
+}
+section#message .slider-text .online {
+    font-size: 40px;
+    line-height: 110px;
+}
+section#message .slider-text .offline {
+    font-size: 30px;
+    line-height: 37px;
+    margin-top: 22px;
+}
+#gear-setting {
+    bottom: 20px;
+    right: 10px;
+    height: 51px;
+    width: 51px;
+}
+
+.settings-popup {
+    display: none;
+    height: 200px;
+    width: 200px;
+    top: 205px;
+}/*there's problom with normal.css*/ 
